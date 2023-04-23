@@ -1,9 +1,0 @@
-This program is a basic implementation of a blockchain. It defines three classes: Transaction, Wallet, and Block.
-
-Transaction represents a transaction in the blockchain, with a sender, a recipient, and an amount. It also has a method isValid() which returns true if the transaction is valid.
-
-Wallet represents a wallet, with a name and a balance. It has a method sendMoney() which sends a specified amount of money to a recipient and returns a vector of transactions. It also has a method receiveMoney() which adds a specified vector of transactions to the balance of the wallet.
-
-Block represents a block in the blockchain, with a vector of transactions, a previous hash, a hash, a nonce, and a reward. It has methods calculateHash() which calculates the hash of the block, mineBlock() which mines the block by finding a hash with a specified difficulty level, and getters for the transactions, the previous hash, the hash, and the reward.
-
-Blockchain represents a blockchain, with a vector of blocks, a difficulty level, and a vector of pending transactions. It has methods addBlock() which adds a specified block to the blockchain, getLatestBlockHash() which returns the hash of the latest block in the blockchain, minePendingTransactions() which mines a new block with the pending transactions, and createTransaction() which creates a new transaction and adds it to the pending transactions.
